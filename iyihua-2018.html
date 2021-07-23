@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>王吕伊华-2018</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,500,600,700|Open+Sans:400,500,600,700' rel='stylesheet' type='text/css'>
+    <style>
+    .clear-margin {
+        margin: 0;
+    }
+    
+    .space-top {
+        margin-top: 10px;
+    }
+    
+    .space-right {
+        margin-right: 10px;
+    }
+    
+    .icon-left {
+        margin-right: 5px;
+    }
+    
+    .icon-right {
+        margin-left: 5px;
+    }
+    
+    .labels {
+        word-spacing: 5px;
+        line-height: 2;
+    }
+    
+    .label-keyword {
+        display: inline-block;
+        background: #7eb0db;
+        color: white;
+        font-size: 0.9em;
+        padding: 5px;
+        border: 1px solid #357ebd;
+    }
+    
+    .link-disguise {
+        color: inherit;
+    }
+    
+    .link-disguise:hover {
+        color: inherit;
+    }
+    
+    @media (max-width: 992px) {
+        .clear-margin-sm {
+            margin-bottom: 0;
+        }
+    }
+    
+    body {
+        font-family: 'Lato', "Helvetica Neue", Helvetica, Arial, sans-serif;
+        background: #f0f0f0;
+        color: #333333;
+        font-size: 16px;
+    }
+    
+    .text-bolder {
+        font-weight: bold;
+    }
+    
+    @media only screen {
+        .container {
+            max-width: 50em;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        ul {
+            padding-left: 25px;
+        }
+        .background-details {
+            display: block;
+        }
+        .background-details .icon {
+            max-width: inherit;
+            min-width: inherit;
+            text-align: left;
+        }
+        .background-details .icon,
+        .background-details .info {
+            display: block;
+            padding: 10px 0;
+        }
+        .background-details .title {
+            display: none;
+        }
+        .card-nested {
+            padding: 5px 0;
+        }
+    }
+    
+    .profile-card {
+        display: table;
+        width: 100%;
+    }
+    
+    .profile-pic {
+        display: table-cell;
+        vertical-align: top;
+        padding: 1rem 4rem 0 0;
+    }
+    
+    .profile-pic img {
+        width: 100px;
+        /*height: 100px;*/
+    }
+    
+    .contact-details {
+        display: table-cell;
+    }
+    
+    .contact-details .detail {
+        display: inline-block;
+        line-height: 2;
+        margin-right: 2rem;
+    }
+    
+    .contact-details .detail .icon {
+        padding-right: 7px;
+        color: #888;
+    }
+    
+    .contact-details .detail .info {
+        font-size: 0.8em;
+    }
+    
+    .social-links {
+        line-height: 2.5;
+    }
+    
+    .social-link {
+        display: block;
+    }
+    
+    .social-link span {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    
+    .social-link:hover,
+    .social-link:focus {
+        text-decoration: none;
+    }
+    
+    .social-link .fa {
+        text-align: center;
+        width: 2em;
+    }
+    
+    .fa-github {
+        color: #454545;
+    }
+    
+    .fa-github:hover,
+    .fa-github:focus {
+        text-decoration: none;
+        color: #2b2b2b;
+    }
+    
+    .fa-twitter {
+        color: #33ccff;
+    }
+    
+    .fa-twitter:hover,
+    .fa-twitter:focus {
+        text-decoration: none;
+        color: #00bfff;
+    }
+    
+    .fa-rss {
+        color: #f36f24;
+    }
+    
+    .fa-rss:hover,
+    .fa-rss:focus {
+        text-decoration: none;
+        color: #d8560c;
+    }
+    
+    .fa-linkedin {
+        color: #007bb6;
+    }
+    
+    .fa-linkedin:hover,
+    .fa-linkedin:focus {
+        text-decoration: none;
+        color: #005983;
+    }
+    
+    .fa-skype {
+        color: #12a5f4;
+    }
+    
+    .fa-skype:hover,
+    .fa-skype:focus {
+        text-decoration: none;
+        color: #0986ca;
+    }
+    
+    .fa-stack-overflow {
+        color: #8e8e92;
+    }
+    
+    .fa-stack-overflow:hover,
+    .fa-stack-overflow:focus {
+        text-decoration: none;
+        color: #747479;
+    }
+    
+    .fa-soundcloud {
+        color: #e8822d;
+    }
+    
+    .fa-soundcloud:hover,
+    .fa-soundcloud:focus {
+        text-decoration: none;
+        color: #cc6916;
+    }
+    
+    .fa-pinterest {
+        color: #bd091f;
+    }
+    
+    .fa-pinterest:hover,
+    .fa-pinterest:focus {
+        text-decoration: none;
+        color: #8c0717;
+    }
+    
+    .fa-vimeo {
+        color: #17b3e8;
+    }
+    
+    .fa-vimeo:hover,
+    .fa-vimeo:focus {
+        text-decoration: none;
+        color: #128fba;
+    }
+    
+    .fa-behance {
+        color: #2c98cf;
+    }
+    
+    .fa-behance:hover,
+    .fa-behance:focus {
+        text-decoration: none;
+        color: #2379a5;
+    }
+    
+    .fa-codepen {
+        color: #1c1c1c;
+    }
+    
+    .fa-codepen:hover,
+    .fa-codepen:focus {
+        text-decoration: none;
+        color: #020202;
+    }
+    
+    .fa-foursquare {
+        color: #fa4778;
+    }
+    
+    .fa-foursquare:hover,
+    .fa-foursquare:focus {
+        text-decoration: none;
+        color: #f91554;
+    }
+    
+    .fa-reddit {
+        color: #545454;
+    }
+    
+    .fa-reddit:hover,
+    .fa-reddit:focus {
+        text-decoration: none;
+        color: #3b3b3b;
+    }
+    
+    .fa-spotify {
+        color: #acd200;
+    }
+    
+    .fa-spotify:hover,
+    .fa-spotify:focus {
+        text-decoration: none;
+        color: #829f00;
+    }
+    
+    .fa-dribbble {
+        color: #ce366f;
+    }
+    
+    .fa-dribbble:hover,
+    .fa-dribbble:focus {
+        text-decoration: none;
+        color: #a82959;
+    }
+    
+    .fa-facebook {
+        color: #4b6daa;
+    }
+    
+    .fa-facebook:hover,
+    .fa-facebook:focus {
+        text-decoration: none;
+        color: #3b5687;
+    }
+    
+    .fa-angellist {
+        color: #000000;
+    }
+    
+    .fa-angellist:hover,
+    .fa-angellist:focus {
+        text-decoration: none;
+        color: #000000;
+    }
+    
+    .fa-bitbucket {
+        color: #205081;
+    }
+    
+    .fa-bitbucket:hover,
+    .fa-bitbucket:focus {
+        text-decoration: none;
+        color: #163758;
+    }
+    
+    .fa-google-plus {
+        color: #bf2a1d;
+    }
+    
+    .fa-google-plus:hover,
+    .fa-google-plus:focus {
+        text-decoration: none;
+        color: #932016;
+    }
+    
+    .background-card h4 {
+        font-variant: small-caps;
+        color: #777777;
+        border-bottom: 1px solid #eeeeee;
+        padding-bottom: 1em;
+        margin-bottom: 1em;
+        line-height: 1.2;
+    }
+    
+    .background-card h4:not(:first-child) {
+        margin-top: 2em;
+    }
+    
+    h4>.fa,
+    h4>.title {
+        display: inline-block;
+        vertical-align: baseline;
+    }
+    
+    h4>.fa {
+        width: 4rem;
+    }
+    
+    .content {
+        line-height: 1.5;
+    }
+    
+    .card {
+        background: #ffffff;
+        border: 1px solid #e6e6e6;
+        border-radius: 3px;
+        padding: 2em 3.5em;
+    }
+    
+    .card-nested {
+        padding: 1.5rem 0 1.5rem 4.2rem;
+    }
+    
+    .card-wrapper {
+        padding: 5px;
+    }
+    
+    .enumeration:not(:last-child):after {
+        content: ", ";
+    }
+    
+    .enumeration:last-child:after {
+        content: ".";
+    }
+    
+    @media only screen and (max-width: 768px) {
+        .profile-card {
+            display: block;
+        }
+        .contact-details,
+        .profile-pic {
+            display: block;
+            text-align: center;
+        }
+        .card-nested {
+            padding-left: 0;
+        }
+    }
+    
+    @media only screen and (max-width: 480px) {
+        .contact-details .detail {
+            display: block;
+        }
+    }
+    
+    .card-skills {
+        position: relative;
+    }
+    
+    .skill-info {
+        margin-left: 20px;
+    }
+    
+    @media only screen and (min-width: 768px) {
+        .skill {
+            border-left: 9px solid #555555;
+        }
+        .skill.beginner {
+            height: 50%;
+            border-color: #e74c3c;
+        }
+        .skill.intermediate {
+            height: 70%;
+            border-color: #f1c40f;
+        }
+        .skill.advanced {
+            border-color: #5cb85c;
+        }
+        .skill.master {
+            border-color: black;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .quote {
+            font-size: inherit;
+        }
+    }
+    
+    @media print {
+        body {
+            font-size: 10pt;
+        }
+        a[href]:after {
+            content: none!important;
+        }
+        .pagebreak {
+            page-break-before: always;
+        }
+        .background-card h4:not(:first-child) {
+            margin-top: 0!important;
+        }
+        .card {
+            border: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 100%;
+            width: 100%;
+        }
+        .contact-details .detail .icon {
+            color: #888!important;
+        }
+        .background-card h4 {
+            padding-bottom: 0.5em;
+            margin-bottom: 0.5em;
+            margin-top: 1em!important;
+        }
+        h4>.fa {
+            display: none!important;
+        }
+        .card-nested {
+            padding: .5rem 0 .5rem 0;
+        }
+        .labels {
+            display: inline;
+        }
+        .skill-info {
+            margin-left: 0;
+        }
+        blockquote {
+            font-size: 100%;
+        }
+    }
+    </style>
+</head>
+
+<body itemscope itemtype="http://schema.org/Person">
+    <div class="container">
+        <section class="row">
+            <div class="card-wrapper">
+                <div class="card">
+                    <div class="profile-card">
+                        <div class="profile-pic">
+                            <img class="media-object center-block" alt="Wanglvyihua" src="image/yihua.jpg" itemprop="image">
+                        </div>
+                        <div class="contact-details">
+                            <div class="name-and-profession">
+                                <h3 class="text-bolder name" itemprop="name"> 王吕伊华</h3>
+                                <h5 class="text-muted" itemprop="jobTitle">Programmer</h5>
+                            </div>
+                            <div class="detail">
+                                <span class="icon">
+									<i class="fa fa-lg fa-envelope"></i>
+								</span>
+                                <span class="info">
+									<a href="" class="link-disguise" itemprop="email">619361578@qq.com</a>
+								</span>
+                            </div>
+                            <div class="detail">
+                                <span class="icon">
+									<i class="fa fa-lg fa-phone"></i>
+								</span>
+                                <a href="#" class="link-disguise info" itemprop="telephone">13560427799</a>
+                            </div>
+                            <div class="detail">
+                                <span class="icon">
+									<i class="fa fa-lg fa-map-marker"></i>
+								</span>
+                                <span class="info">广州市天河区梅宾北路梅宾东街10号</span>
+                            </div>
+                            <p>籍贯：广东吴川</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                    	<div class="col-xs-3 col-sm-2"><img src="image/link1.jpg" style="width:100px;"></div>
+					  	<div class="col-xs-3 col-sm-2"><img src="image/link2.jpg" style="width:100px;"></div>
+						<div class="col-xs-6 col-sm-6">
+						  	<a class="social-link" href="" target="_blank">
+	                            <span class="fa fa-github fa-2x"></span>
+	                            <span class="social-link-text">http://github.com/YihuaWanglv</span>
+	                        </a>
+	                        <br/>
+	                        <a class="social-link" href="http://yihuawanglv.github.io/" target="_blank">
+	                            <span class="fa fa-pencil-square-o fa-2x"></span>
+	                            <span class="social-link-text">http://blog.iyihua.cn/</span>
+	                        </a>
+						</div>
+					  	
+					</div>
+                </div>
+            </div>
+        </section>
+        <section class="row">
+            <div class="card-wrapper">
+                <div class="card background-card">
+                    <h4 id="about"> <span class="fa fa-lg fa-user"></span> <strong><span class="title">关于我</span></strong> </h4>
+                    <div class="card-nested" itemprop="description">
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;
+                            本人目前就职于广州运宝网络科技有限公司，任职<strong>项目经理</strong>和<strong>java后端负责人</strong>。目前拥有<strong>8年</strong>java开发工作经验，16年初开始任职<strong>java技术经理</strong>和<strong>项目经理</strong>。
+                        </p>
+                        <p>我能做什么？</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;管理方面，可带团队，之前在枫车公司任职的时候，带的是10人以上的java职能团队，以及约20人的POS收银一体机项目团队。熟悉<strong>PMP项目管理</strong>流程，可带团队进行综合性项目的开发，也可为技术职能团队制定技术开发规范和开发流程，编写项目和技术的各种文档。会培养新人，带领技术人员进步，业余时间会组织java开发学习小组，带领一些java研发进行一些开源java项目的开发。</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;技术方面，分为<strong>技术广度</strong>和<strong>技术深度</strong>两个方面。以前更偏重于技术广度，除了java开发本身，本人还熟悉前端技术。对时下前端技术的更新发展具有敏感性，能基于当下成熟或新颖的前端库进行<strong>前端项目的搭建和开发</strong>，有前端项目开发的实际经验。客户端方面了解安卓开发。其他还会对别的编程语言进行了解学习，比如python或者go语言，不深究，仅限于一定的了解以备在需要的时候，能上手使用，利用不同的工具实现其恰当的价值。而目前则会更偏向于技术深度方面的深挖，处了java开发本身外，对<strong>数据密集型分布式应用</strong>的基本原理有一定的研究，并能基于这些原理，利用java语言进行底层核心模块库进行开发。</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;模型与架构方面，自从从事管理工作开始，也同时开始进行一些<strong>项目模型设计</strong>和<strong>架构</strong>的工作，目前有多个生产线上的项目设计架构经验，其中主要包括一个POS收银一体机项目，一个延迟队列中间件项目，以及一个垂直电商项目。对于服务化架构有比较多的理论和实践经验，可基于各种工具和库，根据平台和需求不同搭建恰当的服务化架构平台，比如<strong>基于dubbo或者gRPC的rpc高性能服务化平台</strong>，或者<strong>基于spring boot搭建更轻量级易用性更好的http服务化平台</strong>，也了解利用<strong>docker进行容器化部署</strong>。</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;最后，理念上，还是追求技术的不断发展，利用适当的工具，安排适当的人员，匹配公司需要，搭建恰到好处并容易更新扩展的应用与平台。希望能够加入更优秀的团队提供更好的服务，实现更高价值。 </p>
+                    </div>
+                    <h4 id="education"><span class="fa fa-lg fa-mortar-board"></span> <strong><span class="title">教育背景</span></strong></h4>
+                    <ul class="list-unstyled">
+                        <li class="card-nested">
+                            <div class="content has-sidebar">
+                                <p class="clear-margin-sm">
+                                    <strong>广东工业大学, 网络工程</strong>,&nbsp; 2010/06获得工科学士学位
+                                </p>
+                                <p class="text-muted">
+                                    <small>2006/-9 - 2010/06</small>
+                                </p>
+                                <strong>主修：</strong>
+                                <div class="space-top labels">
+                                    <span class="label label-keyword">C语言</span>
+                                    <span class="label label-keyword">计算机原理</span>
+                                    <span class="label label-keyword">数据结构</span>
+                                    <span class="label label-keyword">算法</span>
+                                    <span class="label label-keyword">操作系统</span>
+                                    <span class="label label-keyword">编译原理</span>
+                                    <span class="label label-keyword">数据库原理</span>
+                                    <span class="label label-keyword">计算机网络</span>
+                                    <span class="label label-keyword">软件工程</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <h4 id="awards"><span class="fa fa-lg fa-trophy"></span> <strong><span class="title">技能证书</span></strong></h4>
+                    <ul class="list-unstyled">
+                        <li class="card-nested">
+                            <div class="content has-sidebar">
+                                <p class="clear-margin-sm" itemprop="award">
+                                    <strong>英语4级</strong>,&nbsp; <small> on: 2007 </small>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="card-nested">
+                            <div class="content has-sidebar">
+                                <p class="clear-margin-sm" itemprop="award">
+                                    <strong>软件设计师</strong>,&nbsp; <small> on: 2009/11 </small>
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <h4 id="work-experience"> <span class="fa fa-lg fa-pencil-square-o"></span> <strong><span class="title">工作经历</span></strong> </h4>
+                    <ul class="list-unstyled">
+                        <li class="card-nested">
+                            <div class="content has-sidebar">
+                                <p class="clear-margin-sm">
+                                    <strong>项目经理/Java后端负责人</strong> - 
+                                    <a href="http://www.carisok.com/" target="_blank">广州运宝网络科技有限公司</a>
+                                </p>
+                                <p class="text-muted">
+                                    <small>
+                                        <span class="space-right"> 2017/09 - 现在 </span>
+                                        <span> <i class="fa fa-clock-o icon-left"></i> 1年零6个月 </span>
+                                    </small>
+                                </p>
+                                <p>目前负责<strong>古董拍卖电商项目</strong>，兼有拍卖和电商两项主要功能。本人在项目组中担任<strong>项目经理</strong>与<strong>后端负责人</strong>。主要工作职责如下：</p>
+                                <ul>
+                                    <li> 前期的后端设计、架构和开发工作。为项目前期的快速开发和后续的扩展扩大做好基础工作。 </li>
+                                    <li> 安排项目开发工作，保证项目进度。 </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="card-nested">
+                            <div class="content has-sidebar">
+                                <p class="clear-margin-sm">
+                                    <strong>Java技术经理/项目经理</strong> - 
+                                    <a href="http://www.carisok.com/" target="_blank">广州枫车电子商务有限公司</a>
+                                </p>
+                                <p class="text-muted">
+                                    <small>
+										<span class="space-right"> 2016/03 - 2017/09 </span>
+										<span> <i class="fa fa-clock-o icon-left"></i> 1年零7个月 </span>
+									</small>
+                                </p>
+                                <p>枫车平台是一个<strong>汽车后市场移动服务平台</strong>.我在枫车公司任研发部Java技术经理，同时兼任<strong>枫车智能汽修平台</strong>的项目经理。技术经理的职责包括java组开发人员的管理和、培训和考核，java项目的需求分析、技术分析和模型设计等。项目经理的职责为协调各个部门合作顺利的进行项目开发，向产品业务部分按时交付符合需求期望的产品项目。主要工作业绩如下：</p>
+                                <ul>
+                                    <li> 统筹协调智能汽修一体机项目的研发安排，使项目顺利按时上线，并持续迭代。 </li>
+                                    <li> 保证研发部java组开发人员的工作安排、绩效考核和培训的顺利进行。 </li>
+                                    <li> 保证枫车平台内各个java项目服务（包括IM推送、缓存、日志、监控、消息队列和其他业务项目）的设计开发和维护。 </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="card-nested">
+                            <div class="content has-sidebar">
+                                <p class="clear-margin-sm">
+                                    <strong>Java高级工程师</strong> - 
+                                    <a href="http://www.e-cantonfair.com/" target="_blank">广交会电子商务有限公司</a>
+                                </p>
+                                <p class="text-muted">
+                                    <small>
+										<span class="space-right"> 2015/03 - 2016/03 </span>
+										<span> <i class="fa fa-clock-o icon-left"></i> 1年 </span>
+									</small>
+                                </p>
+                                <p>任研发部Java工程师，主要负责广交会B2B跨境电商平台<strong>用户模块</strong>和<strong>物流模块</strong>的前后台开发，帮助平台搭建起用户、商品和物流等模块的数据库表和前后台功能，并与不同物流商沟通接入发货下单订单跟踪等功能。</p>
+                                <ul>
+                                    <li> 开发B2B跨境电商平台用户模块和物流模块。 </li>
+                                    <li> 平台首页：http://www.e-cantonfair.com/ </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="card-nested">
+                            <div class="content has-sidebar">
+                                <p class="clear-margin-sm">
+                                    <strong>Java开发工程师</strong> - 
+                                    <a href="http://www.eastcom.com/" target="_blank">杭州东方通信软件技术有限公司</a>
+                                </p>
+                                <p class="text-muted">
+                                    <small>
+										<span class="space-right"> 2010/06 - 2014/10 </span>
+										<span> <i class="fa fa-clock-o icon-left"></i> 4年零4个月 </span>
+									</small>
+                                </p>
+                                <p>任Java项目部研发，主要负责数据网管系统的开发，有2个大型J2EE系统项目开发经验，主管配置激活项目的开发和维护，完成日常后台的开发任务，负责设计开发前台web的框架，并参与开发和维护。主要业绩：</p>
+                                <ul>
+                                    <li> 移动公司配置激活管理系统 </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <h4 id="skills"><span class="fa fa-lg fa-code"></span><strong class="title">技能知识</strong></h4>
+                    <h5>技能清单: </h5>
+                    <ul class="list-unstyled">
+                    	<li class="card-nested skill master">
+                            <strong>开发语言与环境:</strong>
+                            <span class="enumeration">Java</span> <span class="enumeration">Javascript</span> <span class="enumeration">Linux</span>
+                        </li>
+                        <li class="card-nested skill master">
+                            <strong>数据库与搜索:</strong>
+                            <span class="enumeration">Mysql</span> <span class="enumeration">Oracle</span> <span class="enumeration">Nosql</span><span class="enumeration">Redis</span><span class="enumeration">ElasticSearch</span>
+                        </li>
+                        <li class="card-nested skill master">
+                            <strong>Java技术:</strong>
+                            <span class="enumeration">Spring</span><span class="enumeration">Spring Boot</span><span class="enumeration">Mybatis/Jdbc/Jpa</span><span class="enumeration">Dubbo</span><span class="enumeration">Vertx</span><span class="enumeration">Junit/TestNG</span><span class="enumeration">Socket/Concurrency</span>
+                        </li>
+                        <li class="card-nested skill master">
+                            <strong>管理构建部署工具:</strong>
+                            <span class="enumeration">Svn</span> <span class="enumeration">Git</span> <span class="enumeration">Maven</span><span class="enumeration">Jenkins</span><span class="enumeration">Docker</span>
+                        </li>
+                        <li class="card-nested skill master">
+                            <strong>Web开发:</strong>
+                            <span class="enumeration">HTML</span> <span class="enumeration">CSS</span> <span class="enumeration">Javascript</span><span class="enumeration">Nodejs</span>
+                        </li>
+                        <li class="card-nested skill master">
+                            <strong>Web框架:</strong>
+                            <span class="enumeration">Jquery</span><span class="enumeration">Angularjs</span><span class="enumeration">Bootstrap</span><span class="enumeration">Reactjs/Vuejs</span>
+                        </li>
+                    </ul>
+                    <h5>简要介绍：</h5>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;1. Java基础扎实，并有一定的分布式系统开发经验。熟悉后台应用层开发，熟练掌握ssh等开发框架，熟悉Oracle和Mysql等数据库相关开发，并熟悉sql，熟悉系统在linux服务器的部署和维护。</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;2. 良好的编程习惯，具备面向对象开发思想。基于Junit/TestNG单元测试，良好的基于svn或git的版本控制管理</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;3. web方面，对html/css/javascript有比较好的理解和实践。能比较熟练使用后端模板技术如freemaker和jsp，同时也对前端技术框架有一定的使用经验和理解，如Jquery（熟练）、Requirejs、angularjs、bootstrap等</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;4. 熟悉基于dubbo+zookeeper或spring cloud的服务化分布式电商平台开发</p>
+                    
+                    
+                    <h4 id="volunteer-work"><span class="fa fa-lg fa-child"></span><strong><span class="title">主要项目</span></strong> </h4>
+                    <ul class="list-unstyled">
+                        <li class="card-nested">
+                            <div class="content has-sidebar">
+                                <p class="clear-margin-sm">
+                                    <strong>古董拍卖电商</strong>&nbsp;&nbsp;<small>2017/09—现在</small>
+                                </p>
+                                <p><strong>- 责任描述</strong></p>
+                                <ul>
+                                    <li>电商项目的项目管理、设计、架构和开发</li>
+                                </ul>
+                                <p><strong>- 项目描述</strong></p>
+                                <ul>
+                                    <li>1. 项目介绍：一个兼具直播拍卖和S2B2C的电商平台。</li>
+                                    <li>2. 业务功能：直播拍卖、限时拍卖、同步拍卖、S2B2C电商等。</li>
+                                </ul>
+                                <p><strong>- 技术架构</strong></p>
+                                <ul>
+                                    <li>1. 前期基于spring boot、mybatis、mq、redis、mysql等，以http restful接口作为前后端和网关与服务间的通信协议。</li>
+                                    <li>2. （目前只是设计阶段，尚未扩大到这一步）中后期迭代扩大时，逐步引入dubbo或必要的spring cloud组件作为服务框架。</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="card-nested">
+                            <div class="content has-sidebar">
+                                <p class="clear-margin-sm">
+                                    <strong>枫车智能汽修平台/一体机</strong>&nbsp;&nbsp;<small>2016/05—现在</small>
+                                </p>
+                                <p><strong>- 责任描述</strong></p>
+                                <ul>
+                                    <li>设计架构平台app后台，并作为项目经理协调各个部门顺利按时的开发项目，保证项目上线</li>
+                                </ul>
+                                <p><strong>- 项目描述</strong></p>
+                                <ul>
+                                    <li>1. 项目介绍：枫车公司汽修汽配门店线上线下业务的综合性管理平台，包含线下门店收银机收银、商品客户管理和PC端等。</li>
+                                    <li>2. 功能和技术介绍：包含线下收银机、线上pc端和后台运营管理。业务功能有订单收银，商品客户管理，用户和会员卡等。</li>
+                                </ul>
+                                <p><strong>- 项目业绩</strong></p>
+                                <ul>
+                                    <li>1. 协调项目1.0开发上线。</li>
+                                    <li>2. 需求分析，模型设计，保证后台开发和维护稳定进行。</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="card-nested">
+                            <div class="content has-sidebar">
+                                <p class="clear-margin-sm">
+                                    <strong>广交会电商B2B跨境电商平台</strong>&nbsp;&nbsp;<small>2015/04—2015/11</small>
+                                </p>
+                                <p><strong>- 责任描述</strong></p>
+                                <ul>
+                                    <li>负责电商平台发用户、商品、物流模块的数据表模型设计开发，后台soa服务和mvc接口服务编写，以及负责的模块界面接入，并就物流模块的业务与不同物流商沟通调试接入。</li>
+                                </ul>
+                                <p><strong>- 项目描述</strong></p>
+                                <ul>
+                                    <li>1. 项目介绍：广交会官方B2B跨境电子商务平台。</li>
+                                    <li>2. 功能和技术介绍：
+                                    	<p>1）后台采用mybatis、soa、zookeeper、dubbo、redis、Mq、solr/es，数据库是mysql；</p>
+                                    	<p>2）前台则采用springMVC、freemaker，前端技术包括但不仅限于AngularJs、RequireJs、Jquery等</p>
+                                    </li>
+                                </ul>
+                                <p><strong>- 项目业绩</strong></p>
+                                <ul>
+                                    <li>1. 在广电商一年主要业绩是作为物流模块的负责人，保证广电商B2B跨境电商一期顺利开发完成。</li>
+                                    <li>2. 是用户模块注册流程的开发人，有整套用户模块注册登录的开发实践经验</li>
+                                    <li>3. 物流模块的公关难点主要是实现了运费模板的设计和实现，以及物流发货方面开发的同时和各个物流商沟通调试对接，通过webservice和物流商下发订单实现发货。</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="card-nested">
+                            <div class="content has-sidebar">
+                                <p class="clear-margin-sm">
+                                    <strong>配置激活管理系统</strong>&nbsp;&nbsp;<small>2011/06 -- 2014/08</small>
+                                </p>
+                                <p><strong>- 责任描述</strong></p>
+                                <ul>
+                                    <li>项目研发，主要负责后台开发，以及前台界面的设计和开发；后期则是此项目的主要负责人，负责整个项目的新需求开发和维护更新，并解决运营时遇到的各种问题.</li>
+                                </ul>
+                                <p><strong>- 项目描述</strong></p>
+                                <ul>
+                                    <li>1. 项目介绍: 此项目是为移动公司开发的数据网管集中操作维护相关的中大型J2ee系统，项目的主要功能是批量下发配置命令到广东全省各市所部署的路由器、交换机和服务器，并提供配置命令的界面式的创建、配置、管理和下发指令.</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    
+                    <h4 id="interests"> <span class="fa fa-lg fa-heart"></span> <strong><span class="title">兴趣</span></strong> </h4>
+                    <ul class="list-unstyled">
+                        <li class="card-nested">
+                            
+                            <div class="space-top labels">
+                                <span class="label label-keyword">读书</span>
+                                <span class="label label-keyword">Coding</span>
+                                <span class="label label-keyword">Movie</span>
+                                <span class="label label-keyword">星际</span>
+                            </div>
+                        </li>
+                    </ul>
+                    
+                    <h4 id="languages"><span class="fa fa-lg fa-language"></span> <strong><span class="title">语言</span></strong></h4>
+                    <ul class="list-unstyled">
+                        <li class="card-nested">
+                            
+                            <div class="space-top labels">
+                                <span class="label label-keyword">国语</span>
+                                <span class="label label-keyword">粤语</span>
+                                <span class="label label-keyword">英语</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script>
+    /* <![CDATA[ */
+    (function(d, s, a, i, j, r, l, m, t) {
+        try {
+            l = d.getElementsByTagName('a');
+            t = d.createElement('textarea');
+            for (i = 0; l.length - i; i++) {
+                try {
+                    a = l[i].href;
+                    s = a.indexOf('/cdn-cgi/l/email-protection');
+                    m = a.length;
+                    if (a && s > -1 && m > 28) {
+                        j = 28 + s;
+                        s = '';
+                        if (j < m) {
+                            r = '0x' + a.substr(j, 2) | 0;
+                            for (j += 2; j < m && a.charAt(j) != 'X'; j += 2) s += '%' + ('0' + ('0x' + a.substr(j, 2) ^ r).toString(16)).slice(-2);
+                            j++;
+                            s = decodeURIComponent(s) + a.substr(j, m - j)
+                        }
+                        t.innerHTML = s.replace(/</g, '&lt;').replace(/\>/g, '&gt;');
+                        l[i].href = 'mailto:' + t.value
+                    }
+                } catch (e) {}
+            }
+        } catch (e) {}
+    })(document); /* ]]> */
+    </script>
+</body>
+
+</html>
+
